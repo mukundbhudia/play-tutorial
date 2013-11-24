@@ -11,7 +11,7 @@ public class Application extends Controller {
 
     public static Result index() {
         Date today = new Date();
-        return ok("Hello world! The time is: " + today.toString());
+        return ok("Hello world!\r\nThe time is: " + today.toString());
     }
 
 }
