@@ -5,10 +5,13 @@ import play.mvc.*;
 
 import views.html.*;
 
+import java.util.Date;
+
 public class Application extends Controller {
 
     public static Result index() {
-        return ok("Hello world!");
+        Date today = new Date();
+        return ok("Hello world! The time is: " + today.toString());
     }
 
 }
