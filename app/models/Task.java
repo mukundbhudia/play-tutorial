@@ -1,5 +1,7 @@
 package models;
 
+import play.data.validation.Constraints;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +11,8 @@ import java.util.List;
 public class Task {
 
     public Long id;
+
+    @Constraints.Required
     public String label;
 
     public static List<Task> all() {
